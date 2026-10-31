@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "donutclient",
+  "version": "${version}",
+  "name": "Donut Client",
+  "description": "Client-side HUD, ClickGUI and convenience utilities for Fabric 1.21.11.",
+  "authors": ["Donut Client"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": { "client": ["com.donutclient.DonutClient"] },
+  "depends": {
+    "fabricloader": ">=0.18.1",
+    "minecraft": "1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}

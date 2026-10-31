@@ -1,0 +1,14 @@
+GITHUB BUILD INSTRUCTIONS
+
+1. Create a new repository on https://github.com/new (Public or Private is your choice).
+2. Extract this ZIP on your computer.
+3. Open the extracted DonutClient folder. Upload the CONTENTS of that folder to the GitHub repository root. Do not upload the outer DonutClient folder as an extra nested folder.
+4. Make sure the .github/workflows/build.yml file is included. On Windows, enable View > Show > Hidden items if needed.
+5. Commit the uploaded files to the main branch.
+6. Open the repository's Actions tab. Select "Build Donut Client".
+7. If it has not started automatically, choose "Run workflow" and confirm.
+8. Wait for the green checkmark. Open the completed run and download the "Donut-Client-JAR" artifact.
+9. Extract the downloaded artifact. Copy donut-client-2.0.0.jar (the main mod JAR, not the sources JAR) into .minecraft/mods.
+10. Install Fabric Loader and Fabric API for Minecraft 1.21.11, then launch that Fabric profile.
+
+If the workflow fails, open the failed run, expand the red step, and share the error text. A successful GitHub build is not the same as a gameplay test on your PC.
