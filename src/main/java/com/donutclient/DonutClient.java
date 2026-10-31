@@ -13,6 +13,7 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.world.item.Items;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.lwjgl.glfw.GLFW;
 
 public final class DonutClient implements ClientModInitializer {
     public static final String MOD_ID = "donutclient";
@@ -29,9 +30,9 @@ public final class DonutClient implements ClientModInitializer {
         );
         openGuiKey = KeyBindingHelper.registerKeyBinding(new KeyMapping(
                 "key.donutclient.open_gui",
-                InputConstants.Type.KEYSYM,
-                InputConstants.KEY_RIGHT_SHIFT,
-                category
+                 InputConstants.Type.KEYSYM,
+                 GLFW.GLFW_KEY_RIGHT_SHIFT,
+                 category
         ));
 
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
